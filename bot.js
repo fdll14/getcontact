@@ -36,7 +36,7 @@ const chatId = msg.chat.id
 if(msg.text == 'Help'){
    bot.sendMessage(msg.chat.id, `Hai `+msg.from.first_name+` untuk menggunakan bot ini kamu cukup mengetikan nama panggilan dosen saja.
 
-Contoh dengan mengirimkan pesan '*Pak nishom*' tanpa tanda petik.` );
+Contoh dengan mengirimkan pesan '*Pak nishom*' tanpa tanda petik.` , {parse_mode : "markdown"});
 }
 })
 
@@ -50,7 +50,7 @@ bot.sendPhoto(msg.chat.id,"https://i.imgur.com/dofqO3P.jpg" );
 bot.on('message', (msg) => {
 const chatId = msg.chat.id
 if(msg.text == 'bu dyah' || msg.text == 'Bu dyah'){
-  bot.sendMessage(chatId, "Berikut kontak wa bu dyah [get contact](https://wa.me/6285226635634)")
+  bot.sendMessage(chatId, "Berikut kontak wa bu dyah [get contact](https://wa.me/6285226635634)",{parse_mode : "markdown"})
 }else if(msg.text == 'pak taufik' || msg.text == 'Pak taufik'){
   bot.sendMessage(chatId, "Berikut kontak wa pak topik wa.me/6285293376863")
 }else if(msg.text == 'pak nishom' || msg.text == 'Pak nishom'){
