@@ -60,6 +60,7 @@ if(msg.text == 'bu dyah' || msg.text == 'Bu dyah'){
   bot.sendMessage(chatId, `tolong gunakan kata yang sopan saat menggunakan bot
 
 contoh : pak nishom atau bu dyah`)
+}else if(msg.text == 'Help' || msg.text == '/start'){
 }else{
   bot.sendMessage(chatId,` Sepertinya kamu tidak mengetikan nama dosen dengan benar atau contact dosen tersebut belum ada di database kami.
 
