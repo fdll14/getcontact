@@ -34,9 +34,9 @@ hubungi @fdll14 jika bot mengalami masalah terimakasih.
 bot.on('message', (msg) => {
 const chatId = msg.chat.id
 if(msg.text == 'Help'){
-   bot.sendMessage(msg.chat.id, `Hai `+msg.from.first_name+` untuk menggunakan bot ini kamu cukup mengetikan nama panggilan dosen saja.
+	bot.sendPhoto(msg.chat.id,"https://i.imgur.com/dofqO3P.jpg" {caption : `Hai `+msg.from.first_name+` untuk menggunakan bot ini kamu cukup mengetikan nama panggilan dosen saja.
 
-Contoh dengan mengirimkan pesan '*Pak nishom*' tanpa tanda petik.` , {parse_mode : "markdown"});
+Contoh dengan mengirimkan pesan '*Pak nishom*' tanpa tanda petik.` , {parse_mode : "markdown"}});
 }
 })
 
@@ -52,21 +52,21 @@ const chatId = msg.chat.id
 if(msg.text == 'bu dyah' || msg.text == 'Bu dyah'){
   bot.sendMessage(chatId, "Berikut kontak wa bu dyah [get contact](https://wa.me/6285226635634)",{parse_mode : "markdown"})
 }else if(msg.text == 'pak taufik' || msg.text == 'Pak taufik'){
-  bot.sendMessage(chatId, "Berikut kontak wa pak topik wa.me/6285293376863")
+  bot.sendMessage(chatId, "Berikut kontak wa pak topik [get contact](https://wa.me/6285293376863)",{parse_mode : "markdown"})
 }else if(msg.text == 'pak nishom' || msg.text == 'Pak nishom'){
-  bot.sendMessage(chatId, "Berikut kontak wa pak nishom wa.me/6281316468844")
+  bot.sendMessage(chatId, "Berikut kontak wa pak nishom [get contact](https://wa.me/6281316468844)",{parse_mode : "markdown"})
 }else if(msg.text == 'Pak ardi' || msg.text == 'pak ardi'){
-  bot.sendMessage(chatId, "Berikut kontak wa pak ardi wa.me/6282313593935")
+  bot.sendMessage(chatId, "Berikut kontak wa pak ardi [get contact](https://wa.me/6282313593935)",{parse_mode : "markdown"})
 }else if(msg.text == 'Pak ary' || msg.text == 'pak ary'){
-  bot.sendMessage(chatId, "Berikut kontak wa pak ary wa.me/6285290400057")
+  bot.sendMessage(chatId, "Berikut kontak wa pak ary [get contact](https://wa.me/6285290400057)",{parse_mode : "markdown"})
 }else if(msg.text == 'Pak fikri' || msg.text == 'pak fikri'){
-  bot.sendMessage(chatId, "Berikut kontak wa pak fikri wa.me/6285868999245")
+  bot.sendMessage(chatId, "Berikut kontak wa pak fikri [get contact](https://wa.me/6285868999245)",{parse_mode : "markdown"})
 }else if(msg.text == 'Pak slamet' || msg.text == 'pak slamet'){
-  bot.sendMessage(chatId, "Berikut kontak wa pak slamet wa.me/6289663239223")
+  bot.sendMessage(chatId, "Berikut kontak wa pak slamet [get contact](https://wa.me/6289663239223)",{parse_mode : "markdown"})
 }else if(msg.text == 'dega'|| msg.text == 'Dega' || msg.text == 'fikri' || msg.text == 'Fikri' || msg.text == 'nishom' || msg.text == 'taufik' || msg.text == 'ginanjar' || msg.text == 'ardi' || msg.text == 'ari' || msg.text == 'dyah'){
-  bot.sendMessage(chatId, `tolong gunakan kata yang sopan saat menggunakan bot
+  bot.sendMessage(chatId, `tolong gunakan panggilan yang sopan saat menggunakan bot
 
-contoh : pak nishom atau bu dyah`)
+contoh : *pak nishom* atau *bu dyah*`,{parse_mode : "markdown"})
 }else if(msg.text == 'Help' || msg.text == '/start'){
 }else{
   bot.sendMessage(chatId,` Sepertinya kamu tidak mengetikan nama dosen dengan benar atau contact dosen tersebut belum ada di database kami.
