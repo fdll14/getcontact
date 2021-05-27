@@ -36,7 +36,7 @@ const chatId = msg.chat.id
 if(msg.text == 'Help'){
    bot.sendMessage(msg.chat.id, `Hai `+msg.from.first_name+` untuk menggunakan bot ini kamu cukup mengetikan nama panggilan dosen saja.
 
-Contoh dengan mengirimkan pesan '*Pak nishom*' tanpa tanda petik.`} );
+Contoh dengan mengirimkan pesan '*Pak nishom*' tanpa tanda petik.` );
 }
 })
 
