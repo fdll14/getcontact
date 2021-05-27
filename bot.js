@@ -34,9 +34,9 @@ hubungi @fdll14 jika bot mengalami masalah terimakasih.
 bot.on('message', (msg) => {
 const chatId = msg.chat.id
 if(msg.text == 'Help'){
-   bot.sendMessage(chatId, `Hai `+msg.from.first_name+` untuk menggunakan bot ini kamu cukup mengetikan nama panggilan dosen saja.
+   bot.sendPhoto(msg.chat.id,"https://i.imgur.com/dofqO3P.jpg",{caption : `Hai `+msg.from.first_name+` untuk menggunakan bot ini kamu cukup mengetikan nama panggilan dosen saja.
 
-Contoh dengan mengirimkan pesan 'Pak nishom' tanpa tanda petik.`)
+Contoh dengan mengirimkan pesan 'Pak nishom' tanpa tanda petik.`} );
 }
 })
 
