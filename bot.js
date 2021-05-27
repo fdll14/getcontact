@@ -40,6 +40,12 @@ Contoh dengan mengirimkan pesan 'Pak nishom' tanpa tanda petik.`} );
 }
 })
 
+bot.onText(/\/sendpic/, (msg) => {
+
+bot.sendPhoto(msg.chat.id,"https://i.imgur.com/dofqO3P.jpg" );
+    
+});
+
 bot.on('message', (msg) => {
 const chatId = msg.chat.id
 if(msg.text == 'bu dyah' || msg.text == 'Bu dyah'){
