@@ -8,13 +8,6 @@ const bot = new TelegramBot(token, {
   polling: true
 });
 
-// In-memory storage
-let Umur = 0;
-let TB = 0;
-let BB = 0;
-let imt = 0;
-let jeniskelamin = '';
-
 // Listener (handler) for telegram's /start event
 // This event happened when you start the conversation with both by the very first time
 // Provide the list of available commands
