@@ -34,15 +34,16 @@ hubungi @fdll14 jika bot mengalami masalah terimakasih.
 bot.on('message', (msg) => {
 const chatId = msg.chat.id
 if(msg.text == 'Help'){
-   bot.sendMessage(chatId, "Hai "+msg.from.first_name+" untuk menggunakan bot ini kamu cukup mengetikan nama panggilan dosen saja"),
-   bot.sendMessage(chatId, "Contoh dengan mengirimkan pesan 'pak dega' tanpa tanda petik")
+   bot.sendMessage(chatId, `Hai `+msg.from.first_name+` untuk menggunakan bot ini kamu cukup mengetikan nama panggilan dosen saja.
+
+Contoh dengan mengirimkan pesan 'Pak nishom' tanpa tanda petik.`)
 }
 })
 
 bot.on('message', (msg) => {
 const chatId = msg.chat.id
 if(msg.text == 'bu dyah' || msg.text == 'Bu dyah'){
-  bot.sendMessage(chatId, "Berikut kontak wa pak dega wa.me/6285226635634")
+  bot.sendMessage(chatId, "Berikut kontak wa pak dega ()[]wa.me/6285226635634")
 }else if(msg.text == 'pak taufik' || msg.text == 'Pak taufik'){
   bot.sendMessage(chatId, "Berikut kontak wa pak topik wa.me/6285293376863")
 }else if(msg.text == 'pak nishom' || msg.text == 'Pak nishom'){
@@ -55,7 +56,8 @@ if(msg.text == 'bu dyah' || msg.text == 'Bu dyah'){
   bot.sendMessage(chatId, "Berikut kontak wa pak fikri wa.me/6285868999245")
 }else if(msg.text == 'Pak slamet' || msg.text == 'pak slamet'){
   bot.sendMessage(chatId, "Berikut kontak wa pak slamet wa.me/6289663239223")
-}else if(msg.text == 'dega' || msg.text == 'fikri' || msg.text == 'nishom' || msg.text == 'taufik' || msg.text == 'ginanjar' || msg.text == 'ardi' || msg.text == 'ari' || msg.text == 'dyah'){
-  bot.sendMessage(chatId, "tolong yang sopan saat menggunakan bot")
+}else if(msg.text == 'dega'|| msg.text == 'Dega' || msg.text == 'fikri' || msg.text == 'Fikri' || msg.text == 'nishom' || msg.text == 'taufik' || msg.text == 'ginanjar' || msg.text == 'ardi' || msg.text == 'ari' || msg.text == 'dyah'){
+  bot.sendMessage(chatId, "tolong gunakan kata yang sopan saat menggunakan bot"+
+"contoh pak dega / bu dyah")
 }
 });
