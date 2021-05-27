@@ -22,7 +22,7 @@ hubungi @fdll14 jika bot mengalami masalah terimakasih.
         `, {
     parse_mode: 'HTML',
     'reply_markup': {
-      'keyboard': [['Help']],
+      'keyboard': [["Get contact","List dosen"]],
       resize_keyboard: true,
       one_time_keyboard: true,
       force_reply: true,
@@ -33,19 +33,21 @@ hubungi @fdll14 jika bot mengalami masalah terimakasih.
 
 bot.on('message', (msg) => {
 const chatId = msg.chat.id
-if(msg.text == 'Help'){
-	bot.sendPhoto(msg.chat.id,"https://i.imgur.com/dofqO3P.jpg" ,{caption : `Hai `+msg.from.first_name+` untuk menggunakan bot ini kamu cukup mengetikan nama panggilan dosen saja.
+if(msg.text == 'Get contact'){
+	bot.sendPhoto(msg.chat.id,"https://i.imgur.com/oJRdrqB.jpg" ,{caption : `Hai `+msg.from.first_name+` untuk menggunakan bot ini kamu cukup mengetikan nama panggilan dosen saja.
 
-Contoh dengan mengirimkan pesan '*Pak nishom*' tanpa tanda petik.` , {parse_mode : "markdown"}});
+Contoh dengan mengirimkan pesan '*Pak nishom*' tanpa tanda petik.
+
+Lalu tekan __*get contact*__. untuk dialihkan ke obrolan whatsapp.`,parse_mode : "markdown"}); 
 }
 })
 
-
-bot.onText(/\/sendpic/, (msg) => {
-
-bot.sendPhoto(msg.chat.id,"https://i.imgur.com/dofqO3P.jpg" );
-    
-});
+bot.on('message', (msg) => {
+const chatId = msg.chat.id
+if(msg.text == 'List dosen'){
+	bot.sendMessage(chatId, "Fitur akan ditambahkan secepatnya jika sedang gabut.")
+}
+})
 
 bot.on('message', (msg) => {
 const chatId = msg.chat.id
@@ -67,7 +69,7 @@ if(msg.text == 'bu dyah' || msg.text == 'Bu dyah'){
   bot.sendMessage(chatId, `tolong gunakan panggilan yang sopan saat menggunakan bot
 
 contoh : *pak nishom* atau *bu dyah*`,{parse_mode : "markdown"})
-}else if(msg.text == 'Help' || msg.text == '/start'){
+}else if(msg.text == 'Get contact' || msg.text == '/start' || msg.text == 'List dosen'){
 }else{
   bot.sendMessage(chatId,` Sepertinya kamu tidak mengetikan nama dosen dengan benar atau contact dosen tersebut belum ada di database kami.
 
