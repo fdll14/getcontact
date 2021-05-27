@@ -57,7 +57,11 @@ if(msg.text == 'bu dyah' || msg.text == 'Bu dyah'){
 }else if(msg.text == 'Pak slamet' || msg.text == 'pak slamet'){
   bot.sendMessage(chatId, "Berikut kontak wa pak slamet wa.me/6289663239223")
 }else if(msg.text == 'dega'|| msg.text == 'Dega' || msg.text == 'fikri' || msg.text == 'Fikri' || msg.text == 'nishom' || msg.text == 'taufik' || msg.text == 'ginanjar' || msg.text == 'ardi' || msg.text == 'ari' || msg.text == 'dyah'){
-  bot.sendMessage(chatId, "tolong gunakan kata yang sopan saat menggunakan bot"+
-"contoh pak dega / bu dyah")
-}
+  bot.sendMessage(chatId, `tolong gunakan kata yang sopan saat menggunakan bot
+
+contoh : pak nishom atau bu dyah`)
+}else{
+  bot.sendMessage(chaatId,` Sepertinya kamu tidak mengetikan nama dosen dengan benar atau contact dosen tersebut belum ada di database kami.
+
+Kamu bisa mengirimkan pesan ke @fdll14 untuk penambahan contact terimakasih.}
 });
